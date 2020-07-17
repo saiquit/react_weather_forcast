@@ -78,7 +78,9 @@ class Home_page extends Component {
             </Col>
           </Row>
           <Row className="mx-3 second_row">
-            <Tasks />
+            <Col md={8}>
+              <Tasks />
+            </Col>
           </Row>
           <Row className="mx-auto third_row">
             <div className="bg_color" />

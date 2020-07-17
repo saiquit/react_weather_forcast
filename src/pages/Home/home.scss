@@ -1,5 +1,5 @@
 .first_row {
-  min-height: 40vh;
+  min-height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,12 +7,12 @@
   color: white;
 }
 .second_row {
-  min-height: 20vh;
+  color: black;
+  opacity: 1 !important;
+  min-height: 30vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  z-index: 3;
-  color: white;
+  align-items: flex-start;
 }
 .third_row {
   min-height: 40vh;
@@ -31,16 +31,16 @@
   background-color: rgba(0, 0, 0, 0.719);
   width: 100vw;
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
+
   .background {
-    z-index: 0;
     opacity: 0.6;
     width: 100vw;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    top: 0;
-    left: 0;
   }
 }
