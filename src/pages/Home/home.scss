@@ -1,0 +1,46 @@
+.first_row {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: white;
+}
+.second_row {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  color: white;
+}
+.third_row {
+  min-height: 40vh;
+  z-index: 1;
+  color: white;
+  .bg_color {
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(129, 129, 129, 0.411);
+  }
+}
+.bg-container {
+  background-color: rgba(0, 0, 0, 0.719);
+  width: 100vw;
+  position: absolute;
+  height: 100vh;
+  .background {
+    z-index: 0;
+    opacity: 0.6;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+  }
+}
