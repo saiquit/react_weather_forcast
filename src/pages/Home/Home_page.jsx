@@ -25,7 +25,7 @@ class Home_page extends Component {
   location = async () => {
     const {
       data: { country, city },
-    } = await axios.get("http://ip-api.com/json");
+    } = await axios.get("https://ip-api.com/json");
     await this.setState({
       country: country,
       city: city,
