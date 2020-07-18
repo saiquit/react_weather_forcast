@@ -23,17 +23,18 @@ class Home_page extends Component {
   };
 
   location = async () => {
-    const {
-      data: { country, city },
-    } = await axios.get("http://ip-api.com/json");
+    const { data } = await axios.get(
+      "https://api.ipregistry.co/42.0.7.250?key=qbi85gbq5egwyi",
+    );
+
     await this.setState({
-      country: country,
-      city: city,
+      country: data?.location?.country?.name,
+      city: data?.location?.city,
     });
   };
 
   callWeather = async () => {
-    let forCastWeather = await `http://api.weatherapi.com/v1/forecast.json?key=a35c5daa43314912922104036201507&q=${this.state.city}&days=4`;
+    let forCastWeather = await `https://api.weatherapi.com/v1/forecast.json?key=a35c5daa43314912922104036201507&q=${this.state.city}&days=4`;
     const { current, forecast } = (await axios.get(forCastWeather)).data;
     this.setState({
       weather: current,
