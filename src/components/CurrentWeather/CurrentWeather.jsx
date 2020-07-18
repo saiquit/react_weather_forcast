@@ -26,7 +26,7 @@ function CurrentWeather({ weather }) {
           ) : null}
           <Col md="6" className="">
             <img
-              src={`http:${weather.condition.icon}`}
+              src={`https:${weather.condition.icon}`}
               alt="icon"
               height="120px"
               width="120px"

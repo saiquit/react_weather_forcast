@@ -22,7 +22,7 @@ function SingleForcast({ date, day }) {
       )}
       <p>{weekend}</p>
       <div>
-        <img src={`http:${condition?.icon}`} alt="" />
+        <img src={`https:${condition?.icon}`} alt="" />
       </div>
       <h3>{avgtemp_c}°C</h3>
     </Row>
