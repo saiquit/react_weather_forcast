@@ -60,6 +60,7 @@ class Home_page extends Component {
   }
 
   render() {
+    console.log(process.env.API_KEY);
     return (
       <>
         <div className="bg-container">
